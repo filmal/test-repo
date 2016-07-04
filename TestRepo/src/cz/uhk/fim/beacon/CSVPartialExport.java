@@ -65,8 +65,8 @@ public class CSVPartialExport {
 	private void writeFieldToFile(List<WifiScan> wifiScans, PrintWriter pw, String place) {
 		String field;
 		for (WifiScan ws : wifiScans) {
-			//field = ws.getId() + DELIM + ws.getSsid() + DELIM + ws.getSignalStrength() + DELIM + ws.getChannel() + DELIM + ws.getFrequency() + DELIM + place;
-			//pw.println(field);
+			field = ws.getId() + DELIM + ws.getSsid() + DELIM + ws.getSignalStrength() + DELIM + ws.getChannel() + DELIM + ws.getFrequency() + DELIM + place;
+			pw.println(field);
 			//System.out.println(field + DELIM + time);
 			//System.out.println(field);
 		}

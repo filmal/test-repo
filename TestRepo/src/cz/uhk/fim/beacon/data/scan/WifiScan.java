@@ -11,6 +11,8 @@ public class WifiScan implements TransmitterSignal {
     double rssi;
     String ssid;
     int time; // ms;
+    int frequency;
+    int channel;
  
 
     public void setMac(String mac) {
@@ -46,4 +48,22 @@ public class WifiScan implements TransmitterSignal {
     public void setTime(int time) {
         this.time = time;
     }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public void setChannel(int channel) {
+        this.channel = channel;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+    
+    
 }
